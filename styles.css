@@ -1,0 +1,175 @@
+:root {
+    --background-color: #f4f4f9;
+    --text-color: #333;
+    --card-background: #fff;
+    --dark-background-color: #121212;
+    --dark-text-color: #fff;
+    --dark-card-background: #1e1e1e;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: var(--background-color);
+    color: var(--text-color);
+    transition: background 0.3s, color 0.3s;
+}
+
+header {
+    background: #333;
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2rem;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a, #toggle-dark-mode {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.1rem;
+    cursor: pointer;
+}
+
+nav ul li input {
+    padding: 5px;
+    font-size: 1.1rem;
+}
+
+main {
+    padding: 20px;
+}
+
+h2 {
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+}
+
+form {
+    background: var(--card-background);
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: background 0.3s;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+input[type="text"],
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    display: inline-block;
+    background: #333;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #555;
+}
+
+#notes-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.note {
+    background: var(--card-background);
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: calc(33.333% - 20px);
+    box-sizing: border-box;
+    position: relative;
+    transition: background 0.3s;
+}
+
+.note h3 {
+    margin-top: 0;
+    font-size: 1.5rem;
+}
+
+.note p {
+    margin-bottom: 10px;
+}
+
+.note .category,
+.note .tags {
+    font-style: italic;
+    font-size: 0.9rem;
+    color: #666;
+}
+
+.delete-button, .pin-button {
+    position: absolute;
+    top: 10px;
+    background: red;
+    color: #fff;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.delete-button {
+    right: 10px;
+}
+
+.pin-button {
+    left: 10px;
+    background: gold;
+}
+
+.delete-button:hover {
+    background: darkred;
+}
+
+.pin-button:hover {
+    background: darkgoldenrod;
+}
+
+body.dark-mode {
+    background: var(--dark-background-color);
+    color: var(--dark-text-color);
+}
+
+body.dark-mode form, 
+body.dark-mode .note {
+    background: var(--dark-card-background);
+}
+
+body.dark-mode header {
+    background: #222;
+}
+

